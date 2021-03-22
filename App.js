@@ -1,21 +1,19 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import { createStackNavigator, createAppContainer } from "react-navigation";
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
 import HomeScreen from './components/HomeScreen';
 import AboutScreen from './components/AboutScreen';
 import ContactScreen from './components/ContactScreen';
 
-const AppNavigator = createBottomTabNavigator({
-  Home: {
-    screen: HomeScreen
-  },
-  About: {
-    screen: AboutScreen
-  },
-  Contact: {
-    screen: ContactScreen
-  }
-}, {
-  initialRouteName: "Home"
-});
+const Tab = createBottomTabNavigator();
+
+function MyTabs() {
+  return (
+    <Tab.Navigator>
+      <Tab.Screen name="Home" component={HomeScreen} />
+      <Tab.Screen name="About" component={AboutScreen} />
+      <Tab.Screen name="Contact" component={ContactScreen} />
+    </Tab.Navigator>
+  );
+}

@@ -1,11 +1,11 @@
+// Aboutscreen.js
 import React, { Component } from 'react';
+import { Text, View } from 'react-native';
 
-export default class Homescreen extends Component {
-  render() {
-    return (
-      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <Text>Home Screen</Text>
-      </View>
-    )
-  }
+export default function Homescreen() {
+  return (
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+      <Text>Johann!</Text>
+    </View>
+  );
 }

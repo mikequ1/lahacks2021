@@ -1,11 +1,11 @@
-import React, { Component } from 'react'
+// Aboutscreen.js
+import React, { Component } from 'react';
+import { Text, View } from 'react-native';
 
-export default class ContactScreen extends Component {
-  render() {
-    return (
-      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <Text>Contact Screen</Text>
-      </View>
-    )
-  }
+export default function Contactscreen() {
+  return (
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+      <Text>Gay!</Text>
+    </View>
+  );
 }

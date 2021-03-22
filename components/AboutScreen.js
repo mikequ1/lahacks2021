@@ -1,12 +1,11 @@
 // Aboutscreen.js
 import React, { Component } from 'react';
+import { Text, View } from 'react-native';
 
-export default class Aboutscreen extends Component {
-  render() {
-    return (
-      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <Text>About Screen</Text>
-      </View>
-    )
-  }
+export default function Aboutscreen() {
+  return (
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+      <Text>Is!</Text>
+    </View>
+  );
 }

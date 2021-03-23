@@ -1,11 +1,24 @@
 // Aboutscreen.js
 import React, { Component } from 'react';
-import { Text, View } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 
 export default function Homescreen() {
   return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Johann!</Text>
+    <View style={styles.Container}>
+       <Text style={styles.Text}>Johann!</Text>
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  Container: {
+    flex: 1, 
+    justifyContent: 'center', 
+    alignItems: 'center',
+  }, 
+
+  Text: {
+    // Write CSS code for HomeScreen here
+  }
+
+});
